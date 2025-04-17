@@ -58,11 +58,9 @@ const dynamicBucketing = (data: number[], maxBuckets: number) => {
 ```
 
 ## 3. 数据来源
-### 类型校验方案
   - 扩展Ant Design Table列类型定义
   - 本地CSV/Excel文件上传
   - 使用`xlsx`库解析文件数据
-  - 使用`papaparse`处理CSV文件
 
 ## 4. 改进过程
 - **增量改进**：
@@ -75,10 +73,7 @@ const dynamicBucketing = (data: number[], maxBuckets: number) => {
   1. **大文件处理性能问题**：
      - 问题：处理大文件时页面卡顿
      - 解决方案：使用Web Worker进行后台处理
-  2. **TypeScript类型定义复杂**：
-     - 问题：第三方库类型定义不完善
-     - 解决方案：自定义类型声明文件
-  3. **组件库样式冲突**：
+  2. **组件库样式冲突**：
      - 问题：Ant Design Vue样式与其他库冲突
      - 解决方案：使用CSS Scope和深度选择器
 
