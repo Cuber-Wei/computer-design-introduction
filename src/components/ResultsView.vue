@@ -7,7 +7,7 @@
     </a-upload-dragger>
 
     <div class="control-panel" v-if="parsedData.length > 0">
-      <span>计数项目</span>
+      <span>统计项目</span>
       <a-select v-model:value="selectedColumn" placeholder="选择要分析的列" style="width: 200px">
         <a-select-option v-for="(col, index) in numericColumns" :key="index" :value="col">
           {{ col }}
